@@ -7,6 +7,8 @@ const StyledHeader = styled.header`
   padding: 50px 100px;
   div {
     display: flex;
+    align-items: center;
+    justify-content: center;
 
     input {
       border: 0;
@@ -34,7 +36,9 @@ function Header() {
         <div>
           <button>Inicio</button>
           <button>Explore</button>
-          <button>Comece sua campanha</button>
+          <a href="/cadastro">
+            <button>Comece sua campanha</button>
+          </a>
           <button>Entrar</button>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import CadrastoCampanha from "./pages/CadrastoCampanha";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <Route path="sobre" element={""} />
         <Route path="explore" element={""} />
         <Route path="campanha" element={""} />
-        <Route path="cadastro" element={""} />
+        <Route path="cadastro" element={<CadrastoCampanha />} />
       </Routes>
     </BrowserRouter>
   );
