@@ -1,10 +1,22 @@
 import styled from "styled-components";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/clerk-react";
 
 const StyledHeader = styled.header`
   display: flex;
   align-self: center;
   justify-content: space-between;
   padding: 50px 100px;
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
   div {
     display: flex;
     align-items: center;
@@ -30,16 +42,27 @@ const StyledHeader = styled.header`
 function Header() {
   return (
     <StyledHeader>
-      <img src="/Logo.png" alt="" />
+      <a href="/">
+        <img src="/Logo.png" alt="" />
+      </a>
       <div>
         <input type="text" placeholder="Busque por projetos... " />
         <div>
-          <button>Inicio</button>
-          <button>Explore</button>
+          <a href="/">
+            <button>Inicio</button>
+          </a>
+          <a href="/explore">
+            <button>Explore</button>
+          </a>
           <a href="/cadastro">
             <button>Comece sua campanha</button>
           </a>
-          <button>Entrar</button>
+          <SignedOut>
+            <SignInButton />
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
         </div>
       </div>
     </StyledHeader>
