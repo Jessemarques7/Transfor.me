@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Integrante from "./Integrante";
 
 const StyledQuemSomos = styled.section`
   max-width: 1200px;
@@ -17,31 +18,35 @@ const StyledQuemSomos = styled.section`
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 20px;
   }
-
-  .integrante-card {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
-    .image-placeholder {
-      background: #d3d3d3;
-      height: 240px;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
-
-    h3 {
-      font-size: 1.2em;
-      margin-bottom: 5px;
-    }
-
-    div {
-      font-size: 0.9em;
-      color: #555;
-    }
-  }
 `;
+
+const Integrantes = [
+  {
+    Image: "LEANDRO.jpg",
+    name: "Leandro",
+    description: "RM",
+  },
+  {
+    Image: "/JESSE.jpeg",
+    name: "Jesse",
+    description: "RM",
+  },
+  {
+    Image: "/THIAGO.jpg",
+    name: "Thiago",
+    description: "RM",
+  },
+  {
+    Image: "/LUCAS.png",
+    name: "Lucas",
+    description: "RM",
+  },
+  {
+    Image: "/DAVI.jpg",
+    name: "Davi",
+    description: "RM",
+  },
+];
 
 function QuemSomos() {
   return (
@@ -54,31 +59,9 @@ function QuemSomos() {
       </p>
       <div>
         <div className="integrantes">
-          <div className="integrante-card">
-            <div className="image-placeholder"></div>
-            <h3>Lorem ipsum</h3>
-            <span>Lorem ipsum</span>
-          </div>
-          <div className="integrante-card">
-            <div className="image-placeholder"></div>
-            <h3>Lorem ipsum</h3>
-            <span>Lorem ipsum</span>
-          </div>
-          <div className="integrante-card">
-            <div className="image-placeholder"></div>
-            <h3>Lorem ipsum</h3>
-            <span>Lorem ipsum</span>
-          </div>
-          <div className="integrante-card">
-            <div className="image-placeholder"></div>
-            <h3>Lorem ipsum</h3>
-            <span>Lorem ipsum</span>
-          </div>
-          <div className="integrante-card">
-            <div className="image-placeholder"></div>
-            <h3>Lorem ipsum</h3>
-            <span>Lorem ipsum</span>
-          </div>
+          {Integrantes.map((integrante, index) => (
+            <Integrante integrante={integrante} key={index} />
+          ))}
         </div>
       </div>
     </StyledQuemSomos>
