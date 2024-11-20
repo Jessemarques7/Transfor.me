@@ -5,6 +5,7 @@ import {
   SignInButton,
   UserButton,
 } from "@clerk/clerk-react";
+import { NavLink } from "react-router-dom";
 
 const StyledHeader = styled.header`
   display: flex;
@@ -42,21 +43,22 @@ const StyledHeader = styled.header`
 function Header() {
   return (
     <StyledHeader>
-      <a href="/">
+      <NavLink to={"/"}>
         <img src="/Logo.png" alt="" />
-      </a>
+      </NavLink>
       <div>
         <input type="text" placeholder="Busque por projetos... " />
         <div>
-          <a href="/">
+          <NavLink to={"/"}>
             <button>Inicio</button>
-          </a>
-          <a href="/explore">
+          </NavLink>
+          <NavLink to={"/explore"}>
             <button>Explore</button>
-          </a>
-          <a href="/cadastro">
+          </NavLink>
+          <NavLink to={"/cadastro"}>
             <button>Comece sua campanha</button>
-          </a>
+          </NavLink>
+
           <SignedOut>
             <SignInButton />
           </SignedOut>

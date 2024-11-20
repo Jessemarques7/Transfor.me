@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 // Styled Components
@@ -130,9 +131,9 @@ function CadrastoCampanha() {
     <PageWrapper>
       {/* Left Panel */}
       <LeftPanel>
-        <a href="/">
+        <NavLink to={"/"}>
           <h1>transfor.me</h1>
-        </a>
+        </NavLink>
         <div>
           <h3>Vamos começar sua jornada </h3>
           <p>Cadastre-se para começar a apoiar ou montar sua campanha</p>
