@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledProjetos = styled.section`
@@ -130,22 +131,24 @@ function Projetos() {
     <StyledProjetos>
       <StyledMainProjetos>
         <div className="container">
-          <div className="featured-project">
-            <div className="image-placeholder"></div>
-            <h3>Bateria a base de sódio</h3>
-            <p>Lorem ipsum</p>
-            <div className="project-details">
-              <p>4 dias restantes • 358% financiado</p>
-              <p>
-                Descrição do produto, aqui vai informações importantes, mas
-                sendo curto.
-              </p>
-              <div className="tags">
-                <span>Mobilidade Urbana</span>
-                <span>São Paulo, SP</span>
+          <NavLink to={"/projeto"}>
+            <div className="featured-project">
+              <div className="image-placeholder"></div>
+              <h3>Bateria a base de sódio</h3>
+              <p>Lorem ipsum</p>
+              <div className="project-details">
+                <p>4 dias restantes • 358% financiado</p>
+                <p>
+                  Descrição do produto, aqui vai informações importantes, mas
+                  sendo curto.
+                </p>
+                <div className="tags">
+                  <span>Mobilidade Urbana</span>
+                  <span>São Paulo, SP</span>
+                </div>
               </div>
             </div>
-          </div>
+          </NavLink>
 
           <div className="recommended-projects">
             <div className="project-card">
