@@ -58,6 +58,7 @@ const StyledMainProjetos = styled.section`
     grid-gap: 20px;
   }
 
+
   .project-card {
     background: white;
     padding: 15px;
@@ -69,6 +70,12 @@ const StyledMainProjetos = styled.section`
       height: 120px;
       border-radius: 8px;
       margin-bottom: 10px;
+    }
+
+    .image-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     h3 {
@@ -142,23 +149,31 @@ function Projetos() {
 
           <div className="recommended-projects">
             <div className="project-card">
-              <div className="image-placeholder"></div>
-              <h3>Lorem ipsum</h3>
+              <div className="image-placeholder">
+                <img src={"/energia eolica flutuante offshore.jpeg"} alt="Descrição da imagem" />
+              </div>
+              <h3>energia eolica flutuante offshore</h3>
               <span>4 dias restantes • 358% financiado</span>
             </div>
             <div className="project-card">
-              <div className="image-placeholder"></div>
-              <h3>Lorem ipsum</h3>
+              <div className="image-placeholder">
+              <img src={"/Energia geotérmica.jpeg"} alt="Descrição da imagem" />
+              </div>
+              <h3>Energia geotérmica</h3>
               <span>4 dias restantes • 358% financiado</span>
             </div>
             <div className="project-card">
-              <div className="image-placeholder"></div>
-              <h3>Lorem ipsum</h3>
-              <span>4 dias restantes • 358% financiado</span>
+            <div className="image-placeholder">
+            <img src={"/motor energia solar.jpeg"} alt="Descrição da imagem" />
+            </div>
+            <h3>motor energia solar</h3>
+            <span>4 dias restantes • 358% financiado</span>
             </div>
             <div className="project-card">
-              <div className="image-placeholder"></div>
-              <h3>Lorem ipsum</h3>
+              <div className="image-placeholder">
+              <img src={"/painel solar em estradas.jpeg"} alt="Descrição da imagem" />
+              </div>
+              <h3>Paineis solares em estradas</h3>
               <span>4 dias restantes • 358% financiado</span>
             </div>
           </div>
@@ -168,18 +183,24 @@ function Projetos() {
       <StyledNovosProjetos>
         <div className="recommended-projects">
           <div className="project-card">
-            <div className="image-placeholder"></div>
-            <h3>Lorem ipsum</h3>
+          <div className="image-placeholder">
+            <img src={"/painel solar em estradas.jpeg"} alt="Descrição da imagem" />
+            </div>
+            <h3>Paineis solares em estradas</h3>
             <span>4 dias restantes • 358% financiado</span>
           </div>
           <div className="project-card">
-            <div className="image-placeholder"></div>
-            <h3>Lorem ipsum</h3>
+          <div className="image-placeholder">
+            <img src={"/Energia solar.jpeg"} alt="Descrição da imagem" />
+            </div>
+            <h3>Energia solar</h3>
             <span>4 dias restantes • 358% financiado</span>
           </div>
           <div className="project-card">
-            <div className="image-placeholder"></div>
-            <h3>Lorem ipsum</h3>
+          <div className="image-placeholder">
+            <img src={"/Energia biomassa.jpeg"} alt="Descrição da imagem" />
+            </div>
+            <h3>Energia biomassa</h3>
             <span>4 dias restantes • 358% financiado</span>
           </div>
         </div>
