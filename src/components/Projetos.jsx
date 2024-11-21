@@ -19,6 +19,11 @@ const StyledMainProjetos = styled.section`
     grid-gap: 20px;
     max-width: 1200px;
     margin: 100px auto;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
   }
 
   .featured-project {
@@ -32,6 +37,12 @@ const StyledMainProjetos = styled.section`
       height: 200px;
       border-radius: 8px;
       margin-bottom: 20px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
     }
 
     h3 {
@@ -59,7 +70,6 @@ const StyledMainProjetos = styled.section`
     grid-gap: 20px;
   }
 
-
   .project-card {
     background: white;
     padding: 15px;
@@ -71,6 +81,11 @@ const StyledMainProjetos = styled.section`
       height: 120px;
       border-radius: 8px;
       margin-bottom: 10px;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
     }
 
     .image-placeholder img {
@@ -110,8 +125,14 @@ const StyledNovosProjetos = styled.section`
       background: #d3d3d3;
       height: 180px;
       min-width: 360px;
-      border-radius: 8px;
+      border-radius: 15px;
       margin-bottom: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
     }
 
     h3 {
@@ -133,7 +154,9 @@ function Projetos() {
         <div className="container">
           <NavLink to={"/projeto"}>
             <div className="featured-project">
-              <div className="image-placeholder"></div>
+              <div className="image-placeholder">
+                <img src={"/Frame1.png"} alt="Descrição da imagem" />
+              </div>
               <h3>Bateria a base de sódio</h3>
               <p>Lorem ipsum</p>
               <div className="project-details">
@@ -153,28 +176,40 @@ function Projetos() {
           <div className="recommended-projects">
             <div className="project-card">
               <div className="image-placeholder">
-                <img src={"/energia eolica flutuante offshore.jpeg"} alt="Descrição da imagem" />
+                <img
+                  src={"/energia eolica flutuante offshore.jpeg"}
+                  alt="Descrição da imagem"
+                />
               </div>
               <h3>energia eolica flutuante offshore</h3>
               <span>4 dias restantes • 358% financiado</span>
             </div>
             <div className="project-card">
               <div className="image-placeholder">
-              <img src={"/Energia geotérmica.jpeg"} alt="Descrição da imagem" />
+                <img
+                  src={"/Energia geotérmica.jpeg"}
+                  alt="Descrição da imagem"
+                />
               </div>
               <h3>Energia geotérmica</h3>
               <span>4 dias restantes • 358% financiado</span>
             </div>
             <div className="project-card">
-            <div className="image-placeholder">
-            <img src={"/motor energia solar.jpeg"} alt="Descrição da imagem" />
-            </div>
-            <h3>motor energia solar</h3>
-            <span>4 dias restantes • 358% financiado</span>
+              <div className="image-placeholder">
+                <img
+                  src={"/motor energia solar.jpeg"}
+                  alt="Descrição da imagem"
+                />
+              </div>
+              <h3>motor energia solar</h3>
+              <span>4 dias restantes • 358% financiado</span>
             </div>
             <div className="project-card">
               <div className="image-placeholder">
-              <img src={"/painel solar em estradas.jpeg"} alt="Descrição da imagem" />
+                <img
+                  src={"/painel solar em estradas.jpeg"}
+                  alt="Descrição da imagem"
+                />
               </div>
               <h3>Paineis solares em estradas</h3>
               <span>4 dias restantes • 358% financiado</span>
@@ -186,22 +221,25 @@ function Projetos() {
       <StyledNovosProjetos>
         <div className="recommended-projects">
           <div className="project-card">
-          <div className="image-placeholder">
-            <img src={"/painel solar em estradas.jpeg"} alt="Descrição da imagem" />
+            <div className="image-placeholder">
+              <img
+                src={"/painel solar em estradas.jpeg"}
+                alt="Descrição da imagem"
+              />
             </div>
             <h3>Paineis solares em estradas</h3>
             <span>4 dias restantes • 358% financiado</span>
           </div>
           <div className="project-card">
-          <div className="image-placeholder">
-            <img src={"/Energia solar.jpeg"} alt="Descrição da imagem" />
+            <div className="image-placeholder">
+              <img src={"/Energia solar.jpeg"} alt="Descrição da imagem" />
             </div>
             <h3>Energia solar</h3>
             <span>4 dias restantes • 358% financiado</span>
           </div>
           <div className="project-card">
-          <div className="image-placeholder">
-            <img src={"/Energia biomassa.jpeg"} alt="Descrição da imagem" />
+            <div className="image-placeholder">
+              <img src={"/Energia biomassa.jpeg"} alt="Descrição da imagem" />
             </div>
             <h3>Energia biomassa</h3>
             <span>4 dias restantes • 358% financiado</span>
