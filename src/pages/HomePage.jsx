@@ -11,12 +11,6 @@ const StyledHomePage = styled.main`
   justify-content: center;
   flex-direction: column;
 
-  a {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
   margin: 80px auto;
   .MainTitle {
     display: flex;
@@ -41,7 +35,6 @@ const StyledHomePage = styled.main`
       padding: 10px 20px;
       border-radius: 10px;
       background-color: transparent;
-      cursor: pointer;
     }
   }
 
@@ -66,9 +59,7 @@ function HomePage() {
         <section className="MainTitle">
           <h1>Apoie projetos e impulsione um Brasil mais sustentável</h1>
           <p>Somos uma plataforma que impulsiona projetos sustentáveis.</p>
-          <a href="https://youtu.be/iflkMI4QbbI" target="_blank">
-            <button>Assistir video pitch</button>
-          </a>
+          <button>Assistir video pitch</button>
         </section>
         <img className="vector2" src="/Vector2.png" alt="" />
       </StyledHomePage>

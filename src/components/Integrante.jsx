@@ -39,7 +39,7 @@ function Integrante({ integrante }) {
           <img src={integrante.Image} alt="" />
         </div>
         <h3>{integrante.name}</h3>
-        {/* <span>{integrante.description}</span> */}
+        <span>{integrante.description}</span>
       </div>
     </StyledIntegrante>
   );

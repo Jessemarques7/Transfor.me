@@ -22,11 +22,6 @@ const StyledQuemSomos = styled.section`
 
 const Integrantes = [
   {
-    Image: "LEANDRO.jpg",
-    name: "Leandro",
-    description: "RM",
-  },
-  {
     Image: "/JESSE.jpeg",
     name: "Jesse",
     description: "RM",
